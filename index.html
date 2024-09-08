@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNFO BIBLIA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>iNFO BIBLIA</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="versiculos.html">Versículos</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Imagen de Cabecera -->
+        <section class="hero">
+            <img src="imagenes/biblia.jpg" alt="Imagen de cabecera">
+            <div class="hero-text">
+                <h2>Reflexiones para tu vida espiritual</h2>
+                <p>Encuentra inspiración y paz a través de nuestras publicaciones diarias.</p>
+            </div>
+        </section>
+    <div class="changing-text" id="changing-text">
+    Cargando...
+</div>
+    <script>
+    // Arreglo de textos que cambiarán
+    const texts = [
+        "Cristo viene pronto! Espéralo con alegría.",
+        "Cristo es el vínculo viviente entre Dios y el hombre.",
+        "El mayor triunfo de Satanás consiste en conseguir que los hombres se sientan bien en su pecado.",
+        "La obra más importante es la preparación del carácter para la eternidad."
+    ];
+
+    let index = 0;
+
+    // Función para cambiar el texto cada 3 segundos
+    function changeText() {
+        const textElement = document.getElementById("changing-text");
+        textElement.innerHTML = texts[index];
+        index = (index + 1) % texts.length; // Cambiar al siguiente texto de manera cíclica
+    }
+
+    // Cambiar el texto cada 3 segundos
+    setInterval(changeText, 4000);
+
+    // Mostrar el primer texto inmediatamente
+    changeText();
+</script>
+<hr>
+    <main class="container">
+        <section class="content">
+            <h2>Últimas Entradas</h2>
+            <div class="entradas-grid">
+                <article>
+                    <img src="imagenes/bible-hands.png" alt="Con qué me presentaré...">
+                    <h3>¿Con qué me presentaré ante Dios?</h3>
+                    <p>Estos versículos reflejan una serie de preguntas retóricas que subrayan la insuficiencia de los sacrificios... <a href="e2_08092024.html">Leer más...</a></p>
+                </article>
+                <article>
+                    <img src="imagenes/ungiendoajesus.jpeg" alt="Inolvidable">
+                    <h3>Inolvidable</h3>
+                    <p>LMarcos 14:1 indica que habían transcurrido dos días desde la Pascua. Esta reunión ocurrió probablemente... <a href="e1_08092024.html">Leer más...</a></p>
+                </article>
+                <article>
+                    <img src="imagenes/cabeceraL11_3T2024.png" alt="Apresado y Juzgado">
+                    <h3>Apresado y Juzgado</h3>
+                    <p>Los capítulos 14 a 16 de Marcos son conocidos como “el relato de la Pasión” porque describen el sufrimiento, la muerte y... <a href="entrada1_07092024.html">Leer más...</a></p>
+                </article>
+
+            </div>
+            <section class="versiculo">
+                <h2>Versículo Destacado</h2>
+                <blockquote>
+                    "El Señor es mi pastor, nada me faltará." — Salmos 23:1
+                </blockquote>
+            </section>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Últimas Entradas</h3>
+            <ul>
+                <li><a href="e2_08092024.html">¿Con qué me presentaré ante Dios?</a></li>
+                <li><a href="e1_08092024.html">Inolvidable</a></li>
+                <li><a href="entrada1_07092024.html">Apresado y Juzgado</a></li>
+            </ul>
+            <hr>
+            <h3>Páginas</h3>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="versiculos.html">Versículos</a></li>
+            </ul>
+            <hr>
+            <h3>Recursos Adicionales</h3>
+            <ul>
+                <li><a href="#">Reflexiones Diarias</a></li>
+                <li><a href="#">Oraciones para la Familia</a></li>
+                <li><a href="#">Versículos Inspiradores</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="versiculos.html">Versículos</a>
+        </nav>
+        <p>&copy; 2024 iNFO BIBLIA., por Iván Villegas</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,306 @@
+/* Estilos básicos */
+body {
+    font-family: 'Georgia', serif; /* Fuente estilo NYT */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.8; /* Espaciado entre líneas */
+}
+
+header {
+    background-color: #283593;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Times New Roman', serif; /* Fuente serif clásica para el encabezado */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Georgia', serif; /* Título en Georgia para elegancia */
+}
+.changing-text {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', serif;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de cabecera */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-family: 'Georgia', serif;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Georgia', serif;
+}
+
+.hero-text p {
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif para el párrafo */
+}
+
+/* Diseño de la página principal */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Títulos en fuente serif */
+}
+
+/* Estilos para mostrar las entradas con más separación */
+.entradas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid #ddd;
+    font-family: 'Georgia', serif; /* Artículos con fuente clásica */
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+article h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    font-family: 'Georgia', serif;
+}
+
+article p {
+    font-size: 16px;
+    margin: 0 0 15px;
+    font-family: 'Times New Roman', serif; /* Texto del cuerpo en sans-serif */
+}
+
+article a {
+    color: #283593;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article a:hover {
+    text-decoration: underline;
+}
+.red-text {
+    color: red;
+}
+.blue-text {
+    color: blue;
+}
+/* Estilos para el versículo */
+.versiculo {
+    background-color: #f4f4f4;
+    padding: 30px;
+    margin-top: 30px;
+    border-left: 4px solid #283593;
+    font-family: 'Times New Roman', serif; /* Fuente para el versículo */
+}
+
+.versiculo h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.versiculo blockquote {
+    font-family: 'Times New Roman', serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif; /* Sidebar con fuente serif */
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #283593;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #283593;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-family: 'Georgia', serif; /* Fuente para el pie de página */
+}
+/* Estilo para la sección de comentarios */
+.comments-section {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #283593;
+}
+
+/* Estilo para el formulario de comentarios */
+.comment-form .form-group {
+    margin-bottom: 20px;
+}
+
+.comment-form label {
+    display: block;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form textarea:focus {
+    border-color: #283593;
+    outline: none;
+}
+
+.comment-form textarea {
+    resize: vertical;
+}
+
+.comment-form button {
+    background-color: #283593;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #1a237e;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .entradas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .entradas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
