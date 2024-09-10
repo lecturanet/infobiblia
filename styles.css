@@ -73,6 +73,29 @@ nav a:hover {
     font-size: 18px;
     font-family: 'Arial', sans-serif; /* Fuente sans-serif para el párrafo */
 }
+/* Entrada destacada */
+.featured-entry{
+	background-color: #ffeeba;
+	margin: 20px;
+    padding: 20px 0;
+    border: 2px solid #f5c6cb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.featured-entry img{
+	max-width: 600px;
+	margin-right: 20px;
+	border-radius: 10px;
+}
+.featured-entry h2{
+	font-size: : 24px;
+	margin: 0px;	
+}
+.featured-entry p{
+	margin: 5px 0;
+	border-radius: 10px;
+}
 
 /* Diseño de la página principal */
 .container {
