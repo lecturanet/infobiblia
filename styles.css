@@ -106,9 +106,9 @@ nav a:hover {
     gap: 20px;
 }
 .blog-image {
-    width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */
-    /*max-width: 400px;   Pero no superará los 400px */
-    height: auto;   /* Ajustará la altura proporcionalmente */
+    width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
+    /*height: auto;   /* Ajustará la altura proporcionalmente */
+    max-height: 200px;  /* Pero no superará los 400px */
     object-fit: cover;
 }
 
