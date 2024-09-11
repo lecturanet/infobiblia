@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iNFO BIBLIA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Java.js">
 </head>
 <body>
     <header>
@@ -50,7 +51,17 @@
 
     // Mostrar el primer texto inmediatamente
     changeText();
+    function changeText() {
+    const textElement = document.getElementById("changing-text");
+    textElement.classList.remove("show"); // Quita la clase para iniciar la transición
+    setTimeout(() => {
+        textElement.innerHTML = texts[index]; // Cambia el texto después de que la opacidad sea 0
+        textElement.classList.add("show"); // Vuelve a mostrar el texto con opacidad 1
+        index = (index + 1) % texts.length;
+    }, 1000); // Ajusta el tiempo para que coincida con la transición
+}
 </script>
+<link rel="stylesheet" href="styles.css">
 <hr>
     <main class="container">
         <section class="content">
