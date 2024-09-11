@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iNFO BIBLIA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Java.js">
 </head>
 <body>
     <header>
@@ -50,49 +51,44 @@
 
     // Mostrar el primer texto inmediatamente
     changeText();
+    function changeText() {
+    const textElement = document.getElementById("changing-text");
+    textElement.classList.remove("show"); // Quita la clase para iniciar la transición
+    setTimeout(() => {
+        textElement.innerHTML = texts[index]; // Cambia el texto después de que la opacidad sea 0
+        textElement.classList.add("show"); // Vuelve a mostrar el texto con opacidad 1
+        index = (index + 1) % texts.length;
+    }, 1000); // Ajusta el tiempo para que coincida con la transición
+}
 </script>
+<link rel="stylesheet" href="styles.css">
 <hr>
-        <div class="container">
-            <section >
-                <h2>Publicación Destacada</h2>
-
-                <div class="blog-image">
-                <article>
-                <img src="imagenes/leyendobiblia.jpg" class="featured-entry" alt="Leyendo la Biblia...">
-                <h3>Siguiendo a Jesús en un mundo que se aparta de Dios</h3>
-                <h4>08 de septiembre de 2024</h4>
-                <p>Vivimos en un mundo que se aleja cada vez más de los valores y principios de Dios. El bombardeo constante de ideas, ideologías y modas que contradicen las enseñanzas bíblicas nos desafía a vivir nuestra fe de manera auténtica. Como cristianos, estamos llamados...<a href="E3_08092024.html">Leer más...</a></p>
-                </article>
-                </div>
-
-            </section>
-        </div>
     <main class="container">
-
-
         <section class="content">
             <h2>Últimas Entradas</h2>
             <div class="entradas-grid">
                 <article>
                     <img src="imagenes/judas.jpeg" alt="Huyendo de Jesús...">
                     <h3>Dejando todo para huir de Jesús</h3>
-                    <p>Es sorprendente que uno de los colaboradores más cercanos de Jesús lo entregara a sus enemigos. Los evangelios no entran en grandes detalles acerca... <a href="E1_11092024.html">Leer más...</a></p>
+                    <p>Es sorprendente que uno de los colaboradores más cercanos de Jesús lo entregara a sus enemigos. Los evangelios no entran en grandes detalles acerca de la motivación de Judas. Pero... <a href="E1_11092024.html">Leer más...</a></p>
                 </article>
                 <article>
-                    <img src="imagenes/ultimacena.png" alt="Ultima Cena">
-                    <h3>La última Cena</h3>
-                    <p>Marcos 14:1 indica que habían transcurrido dos días desde la Pascua. Esta reunión ocurrió probablemente... <a href="E1_09092024.html">Leer más...</a></p>
+                    <img src="imagenes/getsemani.jpg" alt="Getsemani">
+                    <h3>Getsemaní</h3>
+                    <p>Dejando atrás la ciudad amurallada de Jerusalén, donde habían comido la Pascua, Jesús y sus discípulos cruzaron el valle de Cedrón en dirección a un jardín en la ladera del Monte de los ... <a href="E1_10092024.html">Leer más...</a></p>
                 </article>
                 <article>
                     <img src="imagenes/leyendobiblia.jpg" alt="Leyendo la Biblia">
                     <h3>Siguiendo a Jesús en un mundo que se aparta de Dios</h3>
                     <p>Vivimos en un mundo que se aleja cada vez más de los valores y principios de Dios. El bombardeo constante de ideas, ideologías y... <a href="E3_08092024.html">Leer más...</a></p>
                 </article>
+
+
             </div>
             <section class="versiculo">
                 <h2>Versículo Destacado</h2>
                 <blockquote>
-                    "El Señor es mi pastor, nada me faltará." — Salmos 23:1
+                    "Hasta vuestra vejez yo seré el mismo y hasta vuestras canas os sostendré. Yo, el que hice, yo os llevaré, os sostendré y os guardaré." — Isaías 46:4
                 </blockquote>
             </section>
         </section>
@@ -101,11 +97,11 @@
             <h3>Últimas Entradas</h3>
             <ul>
                 <li><a href="E1_11092024.html">Dejando todo para huir de Jesús</a></li>
-                <li><a href="E1_09092024.html">La última Cena</a></li>
+                <li><a href="E1_10092024.html">Getsemaní</a></li>
                 <li><a href="E3_08092024.html">Siguiendo a Jesús en un mundo que se aparta de Dios</a></li>
                 <li><a href="E2_08092024.html">¿Con qué me presentaré ante Dios?</a></li>
                 <li><a href="E1_08092024.html">Inolvidable</a></li>
-                
+
             </ul>
             <hr>
             <h3>Páginas</h3>
