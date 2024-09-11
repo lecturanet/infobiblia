@@ -111,6 +111,12 @@ nav a:hover {
     max-height: 300px;  /* Pero no superará los 400px */
     object-fit: cover;
 }
+.article-image {
+    width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
+    /*height: auto;   /* Ajustará la altura proporcionalmente */
+    max-height: 300px;  /* Pero no superará los 400px */
+    object-fit: cover;
+}
 
 article {
     background-color: white;
@@ -129,7 +135,8 @@ article:hover {
 
 article img {
     width: 100%;
-    height: auto;
+    max-height: 200px
+    /*height: auto; */
     border-bottom: 1px solid #ddd;
 }
 
