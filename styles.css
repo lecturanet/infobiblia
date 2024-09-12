@@ -99,6 +99,59 @@ nav a:hover {
     font-family: 'Georgia', serif; /* Títulos en fuente serif */
 }
 
+        /* Estilos para la entrada destacada */
+        .featured-entry {
+            display: flex; /* Usamos flexbox para alinear la imagen a la izquierda y el texto a la derecha */
+            align-items: center; /* Centra verticalmente la imagen con el texto */
+            background-color: #ffeeba;
+            padding: 20px;
+            margin: 20px 0;
+            border: 2px solid #f5c6cb;
+            border-radius: 10px;
+        }
+        .destacada {
+            display: flex; /* Usamos flexbox para alinear la imagen a la izquierda y el texto a la derecha */
+            align-items: center; /* Centra verticalmente la imagen con el texto */
+            background-color: white;
+            padding: 15px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        
+        /* Estilos para la imagen de la entrada destacada */
+        .featured-entry img {
+            width: 450px; /* Ancho fijo de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+        .destacada img {
+            width:400px; /* Ancho fijo de la imagen */
+            height: auto; /* Mantiene la proporción de la imagen */
+            margin-right: 20px; /* Espacio entre la imagen y el texto */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Estilos para el texto de la entrada destacada */
+        .destacada h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .destacada p {
+            margin: 5px 0 10px;
+        }
+        .destacada h2 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .featured-entry p {
+            margin: 5px 0 10px;
+        }
+
 /* Estilos para mostrar las entradas con más separación */
 .entradas-grid {
     display: grid;
