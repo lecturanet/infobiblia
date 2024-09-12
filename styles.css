@@ -361,6 +361,10 @@ footer {
         flex-direction: column;
     }
 
+    .destacada {
+        flex-direction: column;
+    }
+    
     .entradas-grid {
         grid-template-columns: 1fr;
     }
