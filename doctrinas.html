@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iNFO BIBLIA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Java.js">
+</head>
+<body>
+    <header>
+        <h1>iNFO BIBLIA</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="versiculos.html">Versículos</a>
+            <a href="#">Doctrinas</a>
+            <a href="#">Música</a>
+        </nav>
+    </header>
+    <!-- Sección de Imagen de Cabecera -->
+        <section class="hero">
+            <img src="imagenes/biblia.jpg" alt="Imagen de cabecera">
+            <div class="hero-text">
+                <h2>Enseñanzas Bíblicas</h2>
+                <!--<p>Encuentra inspiración y paz a través de nuestras publicaciones diarias.</p>-->
+            </div>
+        </section>
+    <div class="changing-text" id="changing-text">
+        Cargando...
+    </div>
+    <script>
+            // Arreglo de textos que cambiarán
+            const texts = [
+                "Cristo viene pronto! Espéralo con alegría.",
+                "Cristo es el vínculo viviente entre Dios y el hombre.",
+                "El mayor triunfo de Satanás consiste en conseguir que los hombres se sientan bien en su pecado.",
+                "La obra más importante es la preparación del carácter para la eternidad."
+            ];
+
+            let index = 0;
+
+            // Función para cambiar el texto cada 3 segundos
+            function changeText() {
+                const textElement = document.getElementById("changing-text");
+                textElement.innerHTML = texts[index];
+                index = (index + 1) % texts.length; // Cambiar al siguiente texto de manera cíclica
+            }
+
+            // Cambiar el texto cada 3 segundos
+            setInterval(changeText, 4000);
+
+            // Mostrar el primer texto inmediatamente
+            changeText();
+            function changeText() {
+                const textElement = document.getElementById("changing-text");
+                textElement.classList.remove("show"); // Quita la clase para iniciar la transición
+                setTimeout(() => {
+                    textElement.innerHTML = texts[index]; // Cambia el texto después de que la opacidad sea 0
+                    textElement.classList.add("show"); // Vuelve a mostrar el texto con opacidad 1
+                    index = (index + 1) % texts.length;
+                }, 1000); // Ajusta el tiempo para que coincida con la transición
+            }
+    </script>
+<link rel="stylesheet" href="styles.css">
+<hr>
+        <!-- Entrada destacada -->
+
+    <main class="container">
+        <section class="content">
+            <h2>Doctrinas</h2>
+            <div class="content">
+                <article>
+                    <img src="imagenes/biblia.jpg" alt="Las Sagradas Escrituras" class="article-image">
+                    <h3 id="sagradas-escrituras">Las Sagradas Escrituras</h3>
+                    <p>Las Sagradas Escrituras, Antiguo y Nuevo Testamento, son la Palabra escrita de Dios, dada por inspiración divina.</p>
+                    <p>Los autores inspirados hablaron y escribieron movidos por el Espíritu Santo. En esta Palabra, Dios ha confiado a la humanidad el conocimiento necesario para la salvación.</p>
+                    <p>Las Sagradas Escrituras son la suprema, autoritaria e infalible revelación de Su voluntad. Son la norma de carácter, la prueba de la experiencia, el revelador definitivo de las doctrinas, y el registro fiable de los actos de Dios en la historia.</p>
+ 
+                    <p>(Sal. 119:105; Prov. 30:5, 6; Isa. 8:20; Juan 17:17; 1 Tes. 2:13; 2 Tim. 3:16, 17; Heb. 4:12; 2 Pedro 1:20, 21.)</p>
+                </article>
+            </div>
+            <hr>
+            <div class="content">
+                <article>
+                    <img src="imagenes/deidad.jpg" alt="La Deidad" class="article-image">
+                    <h3 id="deidad">La Deidad</h3>
+                    <p>Hay un solo Dios: Padre, Hijo, y Espíritu Santo, una unidad de tres Personas coeternales.</p>
+
+                    <p>Dios es inmortal, todopoderoso, omnisciente, sobre todo, y omnipresente. Es infinito y más allá de la comprensión humana, pero conocido a través de su auto-revelación.</p>
+
+                    <p>Dios, que es amor, es por siempre digno de adoración y servicio por parte de toda la creación.  </p>
+
+                    <p>(Gen. 1:26; Deut. 6:4; Isa. 6:8; Mat. 28:19; Juan 3:16 2 Cor. 1:21, 22; 13:14; Ef. 4:4-6; 1 Pedro 1:2.)</p>
+                </article>
+            </div>
+            <hr>
+            <div class="content">
+                <article>
+                    <img src="imagenes/universo.png" alt="El Padre" class="article-image">
+                    <h3 id="padre">Dios Padre</h3>
+                    <p>Dios el Padre eterno es el Creador, Proveedor, Sustentador y Soberano de toda la creación. Él es justo y santo, misericordioso y gentil, lento para la ira, y abundante en amor y fidelidad.</p>
+
+                    <p>Las cualidades y poderes exhibidos en el Hijo y el Espíritu Santo son también las del Padre.</p>
+
+                    <p>(Gen. 1:1; Deut. 4:35; Sal. 110:1, 4; Juan 3:16; 14:9; 1 Cor. 15:28; 1 Tim. 1:17; 1 Juan 4:8; Apoc. 4:11.)</p>
+                </article>
+            </div>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Doctrinas</h3>
+            <ul>
+                <li><a href="#sagradas-escrituras">Las Sagradas Escrituras</a></li>
+                <li><a href="#deidad">La Deidad</a></li>
+                <li><a href="#padre">Dios Padre</a></li>
+                <li><a href="#">Dios Hijo</a></li>
+                <li><a href="#">Dios Espíritu Santo</a></li>
+            </ul>
+            <hr>
+            <h3>Páginas</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="versiculos.html">Versículos</a></li>
+            </ul>
+            <hr>
+            <h3>Enlaces</h3>
+            <ul>
+                <li><a href="https://www.biblegateway.com/?language=es">Biblia en línea</a></li>
+                <li><a href="https://estudielabiblia.com">Biblia en línea y recursos</a></li>
+            </ul>
+            <hr>
+            <h3>Recursos Adicionales</h3>
+            <ul>
+                <li><a href="versiculos.html">Versículos Inspiradores</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="versiculos.html">Versículos</a>
+            <a href="#">Doctrinas</a>
+        </nav>
+        <p>&copy; 2024 iNFO BIBLIA., por Iván Villegas</p>
+    </footer>
+</body>
+</html>

@@ -43,6 +43,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Sección de cabecera */
 .hero {
     position: relative;
@@ -162,7 +166,7 @@ nav a:hover {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
     /*height: auto;   /* Ajustará la altura proporcionalmente */
     max-height: 300px;  /* Pero no superará los 400px */
-    object-fit: cover;
+    object-fit: scale-down;
 }
 .article-image {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
@@ -364,7 +368,11 @@ footer {
     .destacada {
         flex-direction: column;
     }
-    
+
+    .entrada-individual {
+        flex-direction: column;
+    }
+
     .entradas-grid {
         grid-template-columns: 1fr;
     }
