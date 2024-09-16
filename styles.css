@@ -134,8 +134,8 @@ html {
             border-radius: 10px; /* Bordes redondeados */
         }
         .destacada img {
-            width:400px; /* Ancho fijo de la imagen */
-            height: auto; /* Mantiene la proporción de la imagen */
+            width:1005; /* Ancho de la imagen */
+            max-height: 300px; /* Máxima altura de la imagen */
             margin-right: 20px; /* Espacio entre la imagen y el texto */
             border-radius: 10px; /* Bordes redondeados */
         }
