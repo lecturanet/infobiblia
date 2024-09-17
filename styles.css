@@ -165,7 +165,7 @@ html {
 .blog-image {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
     /*height: auto;   /* Ajustará la altura proporcionalmente */
-    max-height: 300px;  /* Pero no superará los 400px */
+    max-height: 200px;  /* Pero no superará los 200px */
     object-fit: cover;
 }
 .article-image {
