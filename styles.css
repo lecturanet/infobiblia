@@ -167,6 +167,7 @@ html {
     /*height: auto;   /* Ajustará la altura proporcionalmente */
     max-height: 200px;  /* Pero no superará los 200px */
     object-fit: cover;
+    object-position: top;
 }
 .article-image {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
