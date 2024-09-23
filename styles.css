@@ -174,7 +174,7 @@ html {
     /*height: auto;   /* Ajustará la altura proporcionalmente */
     max-height: 300px;  /* Pero no superará los 250px */
     object-fit: cover;
-    object-position: top;
+    object-position: center;
 }
 
 article {
