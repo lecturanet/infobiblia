@@ -47,6 +47,99 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Tabla reyes del norte */
+.table-container {
+    margin: 20px;
+    width: 100%;
+}
+
+.floating-table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.floating-table th, .floating-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.floating-table th {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+}
+
+.floating-table td {
+    background-color: #f9f9f9;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+.floating-table tr:hover td {
+    background-color: #f1f1f1;
+}
+
+.floating-table tr:first-child th {
+    font-size: 22px;
+    letter-spacing: 1px;
+    background-color: #2e7d32;
+}
+
+/* Estilos responsivos tabla Reyes del Norte*/
+@media screen and (max-width: 600px) {
+    .floating-table, .floating-table th, .floating-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .floating-table tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #f4f4f9;
+    }
+
+    .floating-table th {
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .floating-table td {
+        text-align: left;
+        padding-left: 40%;
+        position: relative;
+    }
+
+    .floating-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .floating-table td[data-label="Rey"]::before {
+        content: "Rey:";
+    }
+
+    .floating-table td[data-label="Duración de Reinado"]::before {
+        content: "Duración de Reinado:";
+    }
+
+    .floating-table td[data-label="Fecha Aproximada"]::before {
+        content: "Fecha Aproximada:";
+    }
+
+    .floating-table td[data-label="Observaciones"]::before {
+        content: "Observaciones:";
+    }
+}
+
+
+
 /* Sección de cabecera */
 .hero {
     position: relative;
@@ -165,16 +258,14 @@ html {
 .blog-image {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
     /*height: auto;   /* Ajustará la altura proporcionalmente */
-    max-height: 200px;  /* Pero no superará los 200px */
+    max-height: 400px;  /* Pero no superará los 400px */
     object-fit: cover;
-    object-position: top;
 }
 .article-image {
     width: 100%;    /* La imagen ocupará el 100% del ancho de su contenedor */    
     /*height: auto;   /* Ajustará la altura proporcionalmente */
-    max-height: 300px;  /* Pero no superará los 250px */
+    max-height: 400px;  /* Pero no superará los 400px */
     object-fit: cover;
-    object-position: center;
 }
 
 article {
